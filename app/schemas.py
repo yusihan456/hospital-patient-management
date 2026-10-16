@@ -6,7 +6,6 @@ from pydantic import BaseModel, ConfigDict, field_validator
 
 PHONE_PATTERN = re.compile(r"^1[3-9]\d{9}$")
 ID_CARD_PATTERN = re.compile(r"^\d{17}[\dXx]$")
-DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 class PatientBase(BaseModel):

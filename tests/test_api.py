@@ -78,7 +78,11 @@ def test_visit_time_range_filter():
 
     resp = client.get(
         "/api/visits",
-        params={"start_date": "2024-02-01", "end_date": "2024-05-01"},
+        params={
+            "start_date": "2024-02-01",
+            "end_date": "2024-05-01",
+            "patient_id": p["id"],
+        },
     )
     assert resp.status_code == 200
     dates = [v["visit_date"] for v in resp.json()]
