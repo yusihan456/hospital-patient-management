@@ -1,0 +1,18 @@
+# 环境配置(含数据库密码,严禁提交)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 日志
+logs/
+
+# 测试
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
