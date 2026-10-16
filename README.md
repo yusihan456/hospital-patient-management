@@ -28,6 +28,9 @@ mysql -u root -p < sql/init.sql
 改一下 `.env` 里的数据库配置(模板是 `.env.example`):
 
 ```bash
+# Windows
+copy .env.example .env
+# Linux / Mac
 cp .env.example .env
 ```
 
